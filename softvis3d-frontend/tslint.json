@@ -1,0 +1,20 @@
+{
+    "extends": ["tslint:recommended", "tslint-sonarts"],
+    "rules": {
+        "max-line-length": [true, 135],
+        "ordered-imports": [ false ],
+        "object-literal-sort-keys": false,
+        "interface-name": [true, "never-prefix"],
+        "variable-name": ["check-format", "allow-leading-underscore"],
+        "trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
+        "no-bitwise": false,
+        "quotemark": [true, "double"],
+        "eofline": false,
+        "no-parameter-properties": true,
+        "max-classes-per-file": [true, 5],
+        "no-conditional-assignment": false,
+        "prefer-const": false,
+        "ban-types": false,
+        "no-shadowed-variable": false
+    }
+}

@@ -1,0 +1,9 @@
+(function(App, entry) {
+    var softvis3d = new App({
+        baseUrl: "",
+        projectKey: "de.rinderle.softvis3d:softvis3d",
+        isDev: true
+    });
+
+    softvis3d.run(entry);
+})(window.softvis3d.app, "app");

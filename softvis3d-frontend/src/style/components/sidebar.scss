@@ -1,0 +1,99 @@
+.side-bar {
+    position: absolute;
+    top: 35px;
+    right: 1px;
+
+    width: 280px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: auto;
+    padding: 5px;
+
+    h3 {
+        text-align: center;
+        margin: 2px 8px 12px 8px;
+        padding: 2px 0;
+        border-bottom: 1px solid $blue-dark;
+        overflow: hidden;
+    }
+
+    div.select-parent {
+        height: 22px;
+
+        span {
+            background: no-repeat left center;
+            @include bg-img-folder;
+            display: block;
+            cursor: pointer;
+
+            margin: 0;
+            padding: 3px 0 3px 20px;
+            color: $font-color-link-default;
+
+            width: 258px;
+            @include prevent-text-overflow;
+
+            &:hover {
+                color: $font-color-link-hover;
+            }
+        }
+    }
+
+    .current-selected{
+        color: $font-color-link-active;
+        font-weight: bold;
+    }
+
+    div.select-current-folder {
+        height: 22px;
+
+        span {
+            background: no-repeat left center;
+            @include bg-img-open-folder;
+            display: block;
+            cursor: pointer;
+
+            margin: 0 0 0 12px;
+            padding: 3px 0 3px 20px;
+            color: $font-color-link-default;
+
+            width: 246px;
+            @include prevent-text-overflow;
+
+            &:hover {
+                color: $font-color-link-hover;
+            }
+        }
+    }
+
+    ul.node-list {
+        text-align: left;
+        font-weight: normal;
+        list-style: none;
+        margin: 0 0 0 24px;
+        padding: 0;
+
+        li {
+            background: no-repeat left center;
+            padding: 3px 0 3px 20px;
+            margin: 0;
+            color: $font-color-link-default;
+            cursor: pointer;
+
+            width: 235px;
+            @include prevent-text-overflow;
+
+            &.leaf {
+                @include bg-img-file;
+            }
+
+            &.node {
+                @include bg-img-folder;
+            }
+
+            &:hover {
+                color: $font-color-link-hover;
+            }
+        }
+    }
+}

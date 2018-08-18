@@ -1,0 +1,92 @@
+{
+  "name": "softvis3d-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for the SonarQube-Plugin Softvis3D",
+  "main": "src/app.tsx",
+  "scripts": {
+    "postinstall": "yarn run install:dist -s && yarn run install:rebuild-sass -s",
+    "install:dist": "shx cp node_modules/react/dist/react.min.js node_modules/react-dom/dist/react-dom.min.js node_modules/three/build/three.min.js app/static/",
+    "install:rebuild-sass": "node-sass --version || npm rebuild node-sass --no-bin-links",
+    "prestart": "yarn run install:rebuild-sass -s",
+    "start": "webpack-dev-server",
+    "prebuild": "yarn run lint -s && yarn run test -s",
+    "build": "yarn run build:force -s",
+    "prebuild:ci": "yarn run lint -s && yarn run test:coverage -s && yarn run test:sonarqube",
+    "build:ci": "yarn run build:force -s",
+    "prebuild:force": "yarn run install:rebuild-sass -s",
+    "build:force": "webpack --progress --colors --env.prod",
+    "lint": "yarn run lint:sources -s && yarn run lint:tests -s",
+    "lint:sources": "tslint --type-check --project tsconfig.json --config tslint.json --type-check && shx echo \"[tslint] Lint successful (Sources)\"",
+    "lint:tests": "tslint --project test/tsconfig.json --config test/tslint.json --type-check && shx echo \"[tslint] Lint successful (Tests)\"",
+    "test": "mocha",
+    "test:coverage": "nyc mocha",
+    "test:sonarqube": "mocha --reporter mocha-sonar-generic-test-coverage > coverage/sonar-coverage.xml",
+    "posttest:coverage": "shx rm -r .nyc_output"
+  },
+  "author": "Stefan Rinderle & Yvo Niedrich",
+  "contributors": [
+    {
+      "name": "Stefan Rinderle",
+      "email": "stefan@rinderle.info",
+      "url": "https://github.com/stefanrinderle"
+    },
+    {
+      "name": "Yvo Niedrich",
+      "email": "yvo.niedrich@gmail.com",
+      "url": "https://github.com/Ungolianth"
+    }
+  ],
+  "license": "LGPL-3.0",
+  "repository": {
+    "type": "http",
+    "url": "https://github.com/stefanrinderle/softvis3d.git"
+  },
+  "dependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/enzyme": "^2.8.0",
+    "@types/mocha": "^2.2.41",
+    "@types/react": "^15.0.25",
+    "@types/react-addons-test-utils": "^0.14.18",
+    "@types/react-custom-scrollbars": "^4.0.0",
+    "@types/react-dom": "^15.5.0",
+    "@types/sinon": "^2.2.2",
+    "@types/three": "^0.84.8",
+    "axios": "^0.16.1",
+    "codecity-visualizer": "^0.4.6",
+    "mobx": "^3.1.10",
+    "mobx-react": "^4.1.0",
+    "node-sass": "^4.5.3",
+    "react": "^15.4.2",
+    "react-custom-scrollbars": "^4.1.2",
+    "react-dom": "^15.4.2",
+    "sass-loader": "^6.0.5",
+    "three": "^0.85.2",
+    "three-orbit-controls": "^82.1.0",
+    "ts-node": "^3.1.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "chai": "^4.0.0",
+    "core-js": "^2.4.1",
+    "css-loader": "^0.28.3",
+    "enzyme": "^2.8.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "jsdom": "^11.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^3.4.2",
+    "mocha-sonar-generic-test-coverage": "^0.0.3",
+    "nyc": "^10.3.2",
+    "react-addons-test-utils": "^15.5.1",
+    "shx": "^0.2.2",
+    "sinon": "^2.3.2",
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^2.3.2",
+    "tslint-sonarts": "^1.1.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

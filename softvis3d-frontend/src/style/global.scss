@@ -1,0 +1,125 @@
+fieldset {
+    padding: 5px;
+    margin: 0;
+    border: 1px solid $border-color-background;
+    border-radius: 3px;
+
+    legend {
+        margin-left: 8px;
+    }
+
+    &.collapsable, legend, .category-content {
+        transition: .25s ease-out;
+    }
+
+    &.collapsable {
+        legend {
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+                color: $font-color-highlight;
+            }
+
+            &:after {
+                content: '\025BE';
+                padding: 0 5px;
+            }
+        }
+
+        .category-content {
+            max-height: 2048px;
+            margin: 0;
+            padding: 0;
+            border-width: 0;
+            overflow: hidden;
+        }
+
+        &.collapsed {
+            padding: 0;
+            margin-left: 0;
+            margin-right: 0;
+            border-color: transparent;
+
+            .category-content {
+                max-height: 0;
+            }
+
+            legend {
+                margin: 0;
+                padding: 0;
+                &:after {
+                    content: '\025B9';
+                }
+            }
+        }
+    }
+}
+
+.radio-group {
+    label {
+        border: 1px solid transparent;
+        border-radius: 2px;
+        outline: none;
+
+        padding: 3px 5px;
+        cursor: pointer;
+
+        &>input {
+            display: none;
+        }
+
+        &:hover, &:active, &:hover {
+            border-color: $border-color-ui-element;
+        }
+
+        &.active {
+            border-color: $border-color-ui-element;
+            background: $background-ui-active;
+        }
+    }
+}
+
+.selectbox {
+    select {
+        height: 23px;
+        margin: 3px 0 3px 4px;
+        padding: 0 12px 0 6px;
+
+        border: 1px solid $blue-dark;
+        background-color: $white;
+        border-radius: 2px;
+
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        @include bg-img-arrow-down;
+
+        option {
+            background-color: $white;
+        }
+    }
+
+    &>span {
+        padding: 0 2px;
+        &:after {
+            content: ': '
+        }
+    }
+}
+
+body {
+    margin: 0;
+}
+
+body, #app {
+    background-color: $background-app;
+}
+
+#app {
+    @include clearfix;
+    min-width: $dialog-width;
+    background-color: $background-app;
+    position: relative;
+}

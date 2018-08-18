@@ -1,0 +1,34 @@
+{
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "exclude": [
+        "src/lib.d.ts",
+        "node_modules/",
+        "app/",
+        "etc/",
+        "typings/"
+    ],
+    "extension": [
+        ".ts",
+        ".tsx"
+    ],
+    "require": [
+        "ts-node/register"
+    ],
+    "reporter": [
+        "text-summary",
+        "html",
+        "lcov"
+    ],
+    "report-dir": "coverage",
+    "cache": true,
+    "sourceMap": true,
+    "instrument": true,
+    "all": true,
+    "check-coverage": false,
+    "lines": 80,
+    "functions": 95,
+    "branches": 80
+}

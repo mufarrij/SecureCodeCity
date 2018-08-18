@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>de.rinderle.softvis3d</groupId>
+    <artifactId>softvis3d</artifactId>
+    <version>1.0.2-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>sonar-softvis3d-plugin</artifactId>
+  <packaging>sonar-plugin</packaging>
+
+  <name>SoftVis3D Sonar plugin</name>
+  <description>Creates a 3d view of the project structure</description>
+  <url>http://softvis3d.com</url>
+
+  <properties>
+    <jdk.min.version>1.8</jdk.min.version>
+
+    <sonar.version>6.3</sonar.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>softvis3d-frontend</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.sonarsource.sonarqube</groupId>
+      <artifactId>sonar-plugin-api</artifactId>
+      <version>${sonar.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Java and SonarQube -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>${jdk.min.version}</source>
+          <target>${jdk.min.version}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
+        <artifactId>sonar-packaging-maven-plugin</artifactId>
+        <version>1.15</version>
+        <extensions>true</extensions>
+        <configuration>
+          <pluginClass>de.rinderle.softvis3d.SoftVis3DPlugin</pluginClass>
+        </configuration>
+      </plugin>
+
+      <!-- FRONTEND -->
+      <!-- get the frontend production build files -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-remote-resources-plugin</artifactId>
+        <version>1.5</version>
+        <configuration>
+          <resourceBundles>
+            <resourceBundle>de.rinderle.softvis3d:softvis3d-frontend:${project.version}</resourceBundle>
+          </resourceBundles>
+          <attachToMain>false</attachToMain>
+          <outputDirectory>${project.build.directory}/shared-resources</outputDirectory>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>process</goal>
+            </goals>
+            <phase>generate-resources</phase>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- replace the base path -->
+      <plugin>
+        <groupId>com.google.code.maven-replacer-plugin</groupId>
+        <artifactId>replacer</artifactId>
+        <version>1.5.3</version>
+        <executions>
+          <execution>
+            <id>Javascript files</id>
+            <goals>
+              <goal>replace</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <basedir>${project.build.directory}/shared-resources/app/static</basedir>
+              <includes>
+                <include>bundle.js</include>
+              </includes>
+              <file>${project.build.directory}/shared-resources/static/bundle.js</file>
+              <regex>false</regex>
+              <unescape>true</unescape>
+              <replacements>
+                <replacement>
+                  <token>static/resources/</token>
+                  <value>static/softvis3d/resources/</value>
+                </replacement>
+              </replacements>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    <resources>
+      <resource>
+        <directory>${project.build.directory}/shared-resources/app/static</directory>
+        <includes>
+          <include>**/*.*</include>
+        </includes>
+        <targetPath>static</targetPath>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*.*</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+
+</project>

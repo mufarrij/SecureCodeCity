@@ -1,0 +1,79 @@
+.top-bar {
+    @include clearfix;
+    border-bottom: 1px solid $border-color-background;
+    padding: 3px 0;
+
+    height: 26px;
+    margin: auto;
+
+    .no-info {
+        display: block;
+        padding: 5px 8px;
+        color: $font-color-highlight;
+        font-style: italic;
+    }
+
+    .selected-element-info {
+        margin-right: 295px;
+        background: no-repeat 8px 25%;
+        background-size: 20px;
+        &.leaf {
+            @include bg-img-file;
+        }
+        &.node {
+            @include bg-img-folder;
+        }
+
+        .element-name {
+            display: inline-block;
+            margin: 0 60px 0 32px;
+            padding-top: 2px;
+            overflow: hidden;
+
+            font-weight: 600;
+            font-size: 12pt;
+        }
+
+        .info-buttons {
+            display: inline;
+        }
+    }
+
+    .top-bar-menu {
+        float: right;
+        text-align: right;
+        padding-right: 12px;
+
+        .dropdown {
+            $dropdown-width: 160px;
+            $dropdown-padding: 6px;
+
+            position: relative;
+            display: inline-block;
+            overflow: visible;
+
+            .dropdown-menu {
+                display: none;
+                position: absolute;
+                padding: 0 $dropdown-padding $dropdown-padding;
+
+                &.open {
+                    z-index: 20;
+                    display: block;
+                    width: $dropdown-width;
+                    left: -($dropdown-padding);
+                }
+
+                button {
+                    width: 100%;
+                    border-top-width: 0;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    button {
+        @include softvis-button;
+    }
+}

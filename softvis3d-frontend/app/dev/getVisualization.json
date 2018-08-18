@@ -1,0 +1,834 @@
+{
+  "id": "0844b558-2051-45a6-9970-e3f53fc86f09",
+  "name": "root",
+  "isNode": true,
+  "children": [
+    {
+      "id": "2147383713",
+      "name": "softvis3d-base",
+      "isNode": true,
+      "measures": {},
+      "parentId": "0844b558-2051-45a6-9970-e3f53fc86f09",
+      "children": [
+        {
+          "id": "2147383720",
+          "name": "src/main/java/de/rinderle/softvis3d/base",
+          "isNode": true,
+          "measures": {},
+          "parentId": "2147383713",
+          "children": [
+            {
+              "id": "2147383721",
+              "name": "domain",
+              "isNode": true,
+              "measures": {},
+              "parentId": "2147383720",
+              "children": [
+                {
+                  "id": "2147383762",
+                  "name": "tree",
+                  "isNode": true,
+                  "measures": {},
+                  "parentId": "2147383721",
+                  "children": [
+                    {
+                      "id": "f5f6b084-f129-4cba-809d-b81703a21771",
+                      "name": "RootTreeNode.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:softvis3d-base:src/main/java/de/rinderle/softvis3d/base/domain/tree/RootTreeNode.java",
+                      "measures": {
+                        "coverage": 100.0,
+                        "complexity": 1.0,
+                        "new_violations": 0.0,
+                        "violations": 0.0,
+                        "ncloc": 6.0,
+                        "open_issues": 0.0
+                      },
+                      "parentId": "2147383762",
+                      "children": []
+                    },
+                    {
+                      "id": "100eba5a-795a-464e-95b0-968b1e043245",
+                      "name": "TreeNode.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:softvis3d-base:src/main/java/de/rinderle/softvis3d/base/domain/tree/TreeNode.java",
+                      "measures": {
+                        "coverage": 88.2,
+                        "complexity": 24.0,
+                        "new_violations": 0.0,
+                        "violations": 0.0,
+                        "ncloc": 91.0,
+                        "open_issues": 0.0
+                      },
+                      "parentId": "2147383762",
+                      "children": []
+                    },
+                    {
+                      "id": "9fe1b62b-b435-4559-85a5-2ed75a33b358",
+                      "name": "TreeNodeType.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:softvis3d-base:src/main/java/de/rinderle/softvis3d/base/domain/tree/TreeNodeType.java",
+                      "measures": {
+                        "coverage": 100.0,
+                        "complexity": 0.0,
+                        "new_violations": 0.0,
+                        "violations": 0.0,
+                        "ncloc": 4.0,
+                        "open_issues": 0.0
+                      },
+                      "parentId": "2147383762",
+                      "children": []
+                    },
+                    {
+                      "id": "00d35535-addf-40db-9dd8-04705ad7c4e6",
+                      "name": "ValueTreeNode.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:softvis3d-base:src/main/java/de/rinderle/softvis3d/base/domain/tree/ValueTreeNode.java",
+                      "measures": {
+                        "coverage": 100.0,
+                        "complexity": 2.0,
+                        "new_violations": 0.0,
+                        "violations": 0.0,
+                        "ncloc": 13.0,
+                        "open_issues": 0.0
+                      },
+                      "parentId": "2147383762",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "9a754d3b-318c-4d95-8a30-0092353c7455",
+                  "name": "Metric.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:softvis3d-base:src/main/java/de/rinderle/softvis3d/base/domain/Metric.java",
+                  "measures": {
+                    "coverage": 100.0,
+                    "complexity": 5.0,
+                    "new_violations": 0.0,
+                    "violations": 0.0,
+                    "ncloc": 18.0,
+                    "open_issues": 0.0
+                  },
+                  "parentId": "2147383721",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "2147383839",
+              "name": "result",
+              "isNode": true,
+              "measures": {},
+              "parentId": "2147383720",
+              "children": [
+                {
+                  "id": "4e7cf355-6d36-4e97-b002-c05771dab911",
+                  "name": "SoftVis3dJsonWriter.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:softvis3d-base:src/main/java/de/rinderle/softvis3d/base/result/SoftVis3dJsonWriter.java",
+                  "measures": {
+                    "coverage": 67.9,
+                    "complexity": 18.0,
+                    "new_violations": 0.0,
+                    "violations": 1.0,
+                    "ncloc": 117.0,
+                    "open_issues": 1.0
+                  },
+                  "parentId": "2147383839",
+                  "children": []
+                },
+                {
+                  "id": "0c66a46f-5890-4d17-ae79-1bd73540bc0e",
+                  "name": "TreeNodeJsonWriter.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:softvis3d-base:src/main/java/de/rinderle/softvis3d/base/result/TreeNodeJsonWriter.java",
+                  "measures": {
+                    "coverage": 94.0,
+                    "complexity": 11.0,
+                    "new_violations": 0.0,
+                    "violations": 1.0,
+                    "ncloc": 50.0,
+                    "open_issues": 1.0
+                  },
+                  "parentId": "2147383839",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fde016e5-d615-426e-8831-7a6f242cacc7",
+          "name": "pom.xml",
+          "isNode": false,
+          "key": "de.rinderle.softvis3d:softvis3d-base:pom.xml",
+          "measures": {
+            "new_violations": 0.0,
+            "violations": 0.0,
+            "ncloc": 59.0,
+            "open_issues": 0.0
+          },
+          "parentId": "2147383713",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "2147383658",
+      "name": "softvis3d-frontend/src/style",
+      "isNode": true,
+      "measures": {},
+      "parentId": "0844b558-2051-45a6-9970-e3f53fc86f09",
+      "children": [
+        {
+          "id": "2147383659",
+          "name": "components",
+          "isNode": true,
+          "measures": {},
+          "parentId": "2147383658",
+          "children": [
+            {
+              "id": "AVnrN3fCXH5NH9IFB4LL",
+              "name": "builder.scss",
+              "isNode": false,
+              "key": "de.rinderle.softvis3d:softvis3d-frontend:src/style/components/builder.scss",
+              "measures": {
+                "complexity": 26.0,
+                "new_violations": 0.0,
+                "violations": 9.0,
+                "ncloc": 87.0,
+                "open_issues": 9.0
+              },
+              "parentId": "2147383659",
+              "children": []
+            },
+            {
+              "id": "AVnrN3fCXH5NH9IFB4LM",
+              "name": "scene.scss",
+              "isNode": false,
+              "key": "de.rinderle.softvis3d:softvis3d-frontend:src/style/components/scene.scss",
+              "measures": {
+                "complexity": 10.0,
+                "new_violations": 0.0,
+                "violations": 7.0,
+                "ncloc": 45.0,
+                "open_issues": 7.0
+              },
+              "parentId": "2147383659",
+              "children": []
+            },
+            {
+              "id": "AVnrN3fDXH5NH9IFB4LN",
+              "name": "sidebar.scss",
+              "isNode": false,
+              "key": "de.rinderle.softvis3d:softvis3d-frontend:src/style/components/sidebar.scss",
+              "measures": {
+                "complexity": 17.0,
+                "new_violations": 3.0,
+                "violations": 14.0,
+                "ncloc": 80.0,
+                "open_issues": 14.0
+              },
+              "parentId": "2147383659",
+              "children": []
+            },
+            {
+              "id": "AVnrN3fDXH5NH9IFB4LO",
+              "name": "status.scss",
+              "isNode": false,
+              "key": "de.rinderle.softvis3d:softvis3d-frontend:src/style/components/status.scss",
+              "measures": {
+                "complexity": 58.0,
+                "new_violations": 6.0,
+                "violations": 40.0,
+                "ncloc": 148.0,
+                "open_issues": 40.0
+              },
+              "parentId": "2147383659",
+              "children": []
+            },
+            {
+              "id": "AVnrN3fDXH5NH9IFB4LP",
+              "name": "topbar.scss",
+              "isNode": false,
+              "key": "de.rinderle.softvis3d:softvis3d-frontend:src/style/components/topbar.scss",
+              "measures": {
+                "complexity": 8.0,
+                "new_violations": 0.0,
+                "violations": 0.0,
+                "ncloc": 42.0,
+                "open_issues": 0.0
+              },
+              "parentId": "2147383659",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "AVnrN3fBXH5NH9IFB4LF",
+          "name": "colors.scss",
+          "isNode": false,
+          "key": "de.rinderle.softvis3d:softvis3d-frontend:src/style/colors.scss",
+          "measures": {
+            "complexity": 0.0,
+            "new_violations": 0.0,
+            "violations": 0.0,
+            "ncloc": 23.0,
+            "open_issues": 0.0
+          },
+          "parentId": "2147383658",
+          "children": []
+        },
+        {
+          "id": "AVnrN3fCXH5NH9IFB4LG",
+          "name": "global.scss",
+          "isNode": false,
+          "key": "de.rinderle.softvis3d:softvis3d-frontend:src/style/global.scss",
+          "measures": {
+            "complexity": 30.0,
+            "new_violations": 0.0,
+            "violations": 15.0,
+            "ncloc": 103.0,
+            "open_issues": 15.0
+          },
+          "parentId": "2147383658",
+          "children": []
+        },
+        {
+          "id": "AVnrN3fCXH5NH9IFB4LH",
+          "name": "index.scss",
+          "isNode": false,
+          "key": "de.rinderle.softvis3d:softvis3d-frontend:src/style/index.scss",
+          "measures": {
+            "complexity": 9.0,
+            "new_violations": 0.0,
+            "violations": 10.0,
+            "ncloc": 9.0,
+            "open_issues": 10.0
+          },
+          "parentId": "2147383658",
+          "children": []
+        },
+        {
+          "id": "AVnrN3fCXH5NH9IFB4LI",
+          "name": "measures.scss",
+          "isNode": false,
+          "key": "de.rinderle.softvis3d:softvis3d-frontend:src/style/measures.scss",
+          "measures": {
+            "complexity": 0.0,
+            "new_violations": 0.0,
+            "violations": 0.0,
+            "ncloc": 1.0,
+            "open_issues": 0.0
+          },
+          "parentId": "2147383658",
+          "children": []
+        },
+        {
+          "id": "AVnrN3fCXH5NH9IFB4LJ",
+          "name": "mixins.scss",
+          "isNode": false,
+          "key": "de.rinderle.softvis3d:softvis3d-frontend:src/style/mixins.scss",
+          "measures": {
+            "complexity": 9.0,
+            "new_violations": 2.0,
+            "violations": 14.0,
+            "ncloc": 100.0,
+            "open_issues": 14.0
+          },
+          "parentId": "2147383658",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "2147383648",
+      "name": "sonar-softvis3d-plugin",
+      "isNode": true,
+      "measures": {},
+      "parentId": "0844b558-2051-45a6-9970-e3f53fc86f09",
+      "children": [
+        {
+          "id": "2147383654",
+          "name": "src/main/java/de/rinderle/softvis3d",
+          "isNode": true,
+          "measures": {},
+          "parentId": "2147383648",
+          "children": [
+            {
+              "id": "2147383667",
+              "name": "cache",
+              "isNode": true,
+              "measures": {},
+              "parentId": "2147383654",
+              "children": [
+                {
+                  "id": "42bfce34-a1f0-457f-9bbb-10a403d68361",
+                  "name": "Cache.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/cache/Cache.java",
+                  "measures": {
+                    "coverage": 74.1,
+                    "complexity": 10.0,
+                    "new_violations": 0.0,
+                    "violations": 1.0,
+                    "ncloc": 41.0,
+                    "open_issues": 1.0
+                  },
+                  "parentId": "2147383667",
+                  "children": []
+                },
+                {
+                  "id": "71964e1b-dbd2-46d0-ac4f-3ebf2217cd8f",
+                  "name": "SnapshotCacheService.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/cache/SnapshotCacheService.java",
+                  "measures": {
+                    "coverage": 100.0,
+                    "complexity": 5.0,
+                    "new_violations": 0.0,
+                    "violations": 0.0,
+                    "ncloc": 23.0,
+                    "open_issues": 0.0
+                  },
+                  "parentId": "2147383667",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "2147383687",
+              "name": "dao",
+              "isNode": true,
+              "measures": {},
+              "parentId": "2147383654",
+              "children": [
+                {
+                  "id": "2147383775",
+                  "name": "scm",
+                  "isNode": true,
+                  "measures": {},
+                  "parentId": "2147383687",
+                  "children": [
+                    {
+                      "id": "d0549eb9-0d3f-4c31-9618-2fe6bfa29246",
+                      "name": "ScmAuthorCountCalculationService.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/dao/scm/ScmAuthorCountCalculationService.java",
+                      "measures": {
+                        "coverage": 82.4,
+                        "complexity": 11.0,
+                        "new_violations": 0.0,
+                        "violations": 1.0,
+                        "ncloc": 72.0,
+                        "open_issues": 1.0
+                      },
+                      "parentId": "2147383775",
+                      "children": []
+                    },
+                    {
+                      "id": "0b4e715e-abc8-4662-88df-ac4c2149d419",
+                      "name": "ScmCalculationService.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/dao/scm/ScmCalculationService.java",
+                      "measures": {
+                        "coverage": 100.0,
+                        "complexity": 1.0,
+                        "new_violations": 0.0,
+                        "violations": 0.0,
+                        "ncloc": 7.0,
+                        "open_issues": 0.0
+                      },
+                      "parentId": "2147383775",
+                      "children": []
+                    },
+                    {
+                      "id": "43b85ffe-9043-49e4-8ca9-bcc9ae5b384c",
+                      "name": "ScmCommitCountCalculationService.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/dao/scm/ScmCommitCountCalculationService.java",
+                      "measures": {
+                        "coverage": 100.0,
+                        "complexity": 2.0,
+                        "new_violations": 0.0,
+                        "violations": 1.0,
+                        "ncloc": 13.0,
+                        "open_issues": 1.0
+                      },
+                      "parentId": "2147383775",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "ca7e418d-13a6-4862-a65c-fd0e3a7893ed",
+                  "name": "DaoService.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/dao/DaoService.java",
+                  "measures": {
+                    "coverage": 100.0,
+                    "complexity": 3.0,
+                    "new_violations": 0.0,
+                    "violations": 0.0,
+                    "ncloc": 29.0,
+                    "open_issues": 0.0
+                  },
+                  "parentId": "2147383687",
+                  "children": []
+                },
+                {
+                  "id": "AVSMwh9WHWoP2sXIKxPT",
+                  "name": "DaoServiceTransformer.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/dao/DaoServiceTransformer.java",
+                  "measures": {
+                    "coverage": 100.0,
+                    "complexity": 7.0,
+                    "new_violations": 0.0,
+                    "violations": 0.0,
+                    "ncloc": 37.0,
+                    "open_issues": 0.0
+                  },
+                  "parentId": "2147383687",
+                  "children": []
+                },
+                {
+                  "id": "aa39bc67-b8ae-4f4e-bf3f-6a7de78f4798",
+                  "name": "SonarDao.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/dao/SonarDao.java",
+                  "measures": {
+                    "coverage": 2.6,
+                    "complexity": 6.0,
+                    "new_violations": 0.0,
+                    "violations": 3.0,
+                    "ncloc": 64.0,
+                    "open_issues": 3.0
+                  },
+                  "parentId": "2147383687",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "2147383675",
+              "name": "domain",
+              "isNode": true,
+              "measures": {},
+              "parentId": "2147383654",
+              "children": [
+                {
+                  "id": "2147383676",
+                  "name": "sonar",
+                  "isNode": true,
+                  "measures": {},
+                  "parentId": "2147383675",
+                  "children": [
+                    {
+                      "id": "AVSMwh9YHWoP2sXIKxPU",
+                      "name": "ColorMetricType.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/domain/sonar/ColorMetricType.java",
+                      "measures": {
+                        "coverage": 87.5,
+                        "complexity": 10.0,
+                        "new_violations": 0.0,
+                        "violations": 0.0,
+                        "ncloc": 46.0,
+                        "open_issues": 0.0
+                      },
+                      "parentId": "2147383676",
+                      "children": []
+                    },
+                    {
+                      "id": "70fe8e4c-ce15-477b-9f7e-4bc428369977",
+                      "name": "ScmInfo.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/domain/sonar/ScmInfo.java",
+                      "measures": {
+                        "coverage": 92.9,
+                        "complexity": 6.0,
+                        "new_violations": 0.0,
+                        "violations": 0.0,
+                        "ncloc": 30.0,
+                        "open_issues": 0.0
+                      },
+                      "parentId": "2147383676",
+                      "children": []
+                    },
+                    {
+                      "id": "AVSMwh9YHWoP2sXIKxPV",
+                      "name": "SonarMeasure.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/domain/sonar/SonarMeasure.java",
+                      "measures": {
+                        "coverage": 93.3,
+                        "complexity": 8.0,
+                        "new_violations": 0.0,
+                        "violations": 0.0,
+                        "ncloc": 39.0,
+                        "open_issues": 0.0
+                      },
+                      "parentId": "2147383676",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "edaac634-4e2c-4e05-987b-fb94d1120d2a",
+                  "name": "ScmInfo.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/domain/ScmInfo.java",
+                  "measures": {
+                    "coverage": 90.9,
+                    "complexity": 6.0,
+                    "new_violations": 0.0,
+                    "violations": 0.0,
+                    "ncloc": 28.0,
+                    "open_issues": 0.0
+                  },
+                  "parentId": "2147383675",
+                  "children": []
+                },
+                {
+                  "id": "c2523773-2b38-4197-bfa4-486fc5c0ae36",
+                  "name": "SnapshotStorageKey.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/domain/SnapshotStorageKey.java",
+                  "measures": {
+                    "coverage": 82.6,
+                    "complexity": 9.0,
+                    "new_violations": 0.0,
+                    "violations": 1.0,
+                    "ncloc": 35.0,
+                    "open_issues": 1.0
+                  },
+                  "parentId": "2147383675",
+                  "children": []
+                },
+                {
+                  "id": "a9bea44d-b95d-4232-9c10-b64db03575cf",
+                  "name": "VisualizationRequest.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/domain/VisualizationRequest.java",
+                  "measures": {
+                    "coverage": 95.8,
+                    "complexity": 10.0,
+                    "new_violations": 0.0,
+                    "violations": 0.0,
+                    "ncloc": 37.0,
+                    "open_issues": 0.0
+                  },
+                  "parentId": "2147383675",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "2147383732",
+              "name": "preprocessing",
+              "isNode": true,
+              "measures": {},
+              "parentId": "2147383654",
+              "children": [
+                {
+                  "id": "2147383733",
+                  "name": "tree",
+                  "isNode": true,
+                  "measures": {},
+                  "parentId": "2147383732",
+                  "children": [
+                    {
+                      "id": "ec471f72-e5c2-4ed2-a8ce-270a079a33f4",
+                      "name": "OptimizeTreeStructure.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/preprocessing/tree/OptimizeTreeStructure.java",
+                      "measures": {
+                        "coverage": 97.6,
+                        "complexity": 9.0,
+                        "new_violations": 0.0,
+                        "violations": 1.0,
+                        "ncloc": 46.0,
+                        "open_issues": 1.0
+                      },
+                      "parentId": "2147383733",
+                      "children": []
+                    },
+                    {
+                      "id": "800f3402-9702-4297-898a-69c68196e0be",
+                      "name": "PathWalker.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/preprocessing/tree/PathWalker.java",
+                      "measures": {
+                        "coverage": 100.0,
+                        "complexity": 9.0,
+                        "new_violations": 0.0,
+                        "violations": 1.0,
+                        "ncloc": 54.0,
+                        "open_issues": 1.0
+                      },
+                      "parentId": "2147383733",
+                      "children": []
+                    },
+                    {
+                      "id": "77e31f1a-835d-4604-b5c9-ab23ea05346b",
+                      "name": "TreeBuilder.java",
+                      "isNode": false,
+                      "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/preprocessing/tree/TreeBuilder.java",
+                      "measures": {
+                        "coverage": 100.0,
+                        "complexity": 5.0,
+                        "new_violations": 1.0,
+                        "violations": 1.0,
+                        "ncloc": 38.0,
+                        "open_issues": 1.0
+                      },
+                      "parentId": "2147383733",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "df205cda-821b-474b-813f-8fc77cf05d5c",
+                  "name": "PreProcessor.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/preprocessing/PreProcessor.java",
+                  "measures": {
+                    "coverage": 58.3,
+                    "complexity": 4.0,
+                    "new_violations": 0.0,
+                    "violations": 1.0,
+                    "ncloc": 34.0,
+                    "open_issues": 1.0
+                  },
+                  "parentId": "2147383732",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "2147383655",
+              "name": "webservice",
+              "isNode": true,
+              "measures": {},
+              "parentId": "2147383654",
+              "children": [
+                {
+                  "id": "28a6d02d-c3f2-4bef-b9ec-4fe42a720b78",
+                  "name": "AbstractWebserviceHandler.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/webservice/AbstractWebserviceHandler.java",
+                  "measures": {
+                    "coverage": 62.5,
+                    "complexity": 1.0,
+                    "new_violations": 0.0,
+                    "violations": 0.0,
+                    "ncloc": 22.0,
+                    "open_issues": 0.0
+                  },
+                  "parentId": "2147383655",
+                  "children": []
+                },
+                {
+                  "id": "a1e191e1-5ab4-4a95-9184-855fe47dedca",
+                  "name": "ExceptionJsonWriter.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/webservice/ExceptionJsonWriter.java",
+                  "measures": {
+                    "coverage": 100.0,
+                    "complexity": 1.0,
+                    "new_violations": 0.0,
+                    "violations": 0.0,
+                    "ncloc": 19.0,
+                    "open_issues": 0.0
+                  },
+                  "parentId": "2147383655",
+                  "children": []
+                },
+                {
+                  "id": "2d18fd06-cd92-4a1b-8a54-6870eaa2d270",
+                  "name": "VisualizationWebserviceHandler.java",
+                  "isNode": false,
+                  "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/webservice/VisualizationWebserviceHandler.java",
+                  "measures": {
+                    "coverage": 82.6,
+                    "complexity": 5.0,
+                    "new_violations": 0.0,
+                    "violations": 1.0,
+                    "ncloc": 43.0,
+                    "open_issues": 1.0
+                  },
+                  "parentId": "2147383655",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "82f059d4-c9e5-436e-8428-9bee371089fd",
+              "name": "SoftVis3DPage.java",
+              "isNode": false,
+              "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/SoftVis3DPage.java",
+              "measures": {
+                "coverage": 100.0,
+                "complexity": 3.0,
+                "new_violations": 0.0,
+                "violations": 0.0,
+                "ncloc": 23.0,
+                "open_issues": 0.0
+              },
+              "parentId": "2147383654",
+              "children": []
+            },
+            {
+              "id": "605db7b8-0af7-4ca1-bbf8-859b9aa9f958",
+              "name": "SoftVis3DPlugin.java",
+              "isNode": false,
+              "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/SoftVis3DPlugin.java",
+              "measures": {
+                "coverage": 100.0,
+                "complexity": 1.0,
+                "new_violations": 0.0,
+                "violations": 0.0,
+                "ncloc": 12.0,
+                "open_issues": 0.0
+              },
+              "parentId": "2147383654",
+              "children": []
+            },
+            {
+              "id": "4dd75b19-855a-4e92-91d2-68e7c31b1c61",
+              "name": "SoftVis3DWebservice.java",
+              "isNode": false,
+              "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:src/main/java/de/rinderle/softvis3d/SoftVis3DWebservice.java",
+              "measures": {
+                "coverage": 100.0,
+                "complexity": 2.0,
+                "new_violations": 0.0,
+                "violations": 0.0,
+                "ncloc": 25.0,
+                "open_issues": 0.0
+              },
+              "parentId": "2147383654",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "256f7da4-96e9-480c-9c41-13eccaee014b",
+          "name": "pom.xml",
+          "isNode": false,
+          "key": "de.rinderle.softvis3d:sonar-softvis3d-plugin:pom.xml",
+          "measures": {
+            "new_violations": 0.0,
+            "violations": 0.0,
+            "ncloc": 208.0,
+            "open_issues": 0.0
+          },
+          "parentId": "2147383648",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

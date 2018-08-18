@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "outDir": ".",
+        "sourceMap": false,
+        "noImplicitAny": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "strictNullChecks": true,
+        "experimentalDecorators": true,
+        "module": "commonJS",
+        "target": "es6",
+        "jsx": "react"
+    },
+    "compileOnSave": false,
+    "files": [
+        "../src/lib.d.ts"
+    ],
+    "include": [
+        "../src/**/*",
+        "./**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "filesGlob": [
+        "./**/*.ts",
+        "./**/*.tsx",
+        "!node_modules/**"
+    ]
+}

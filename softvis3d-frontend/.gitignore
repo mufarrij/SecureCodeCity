@@ -1,0 +1,11 @@
+.ignore/
+.nyc_output/
+coverage/
+typings/
+yarn/
+
+app/development.js
+src/*.js
+src/*.js.map
+
+npm-debug.log*
